@@ -4,10 +4,10 @@
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Create an account in Github pages&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Install pelican. I have used pip.&lt;/p&gt;
-&lt;pre class="literal-block"&gt;
-pip install pelican
-&lt;/pre&gt;
+&lt;li&gt;&lt;p class="first"&gt;Install pelican. I have used pip. .. code:: shell&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;pip install pelican&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Use the pelican-quickstart command to insert default settings&lt;/p&gt;
 &lt;/li&gt;
