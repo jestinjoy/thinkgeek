@@ -1,3 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>My Blog</title><link href="http://blog.jestinjoy.info/" rel="alternate"></link><link href="http://blog.jestinjoy.info/feeds/all-en.atom.xml" rel="self"></link><id>http://blog.jestinjoy.info/</id><updated>2014-01-01T11:01:01+05:30</updated><entry><title>Blogging with Pelican</title><link href="http://blog.jestinjoy.info/blogging-with-pelican.html" rel="alternate"></link><updated>2014-01-01T11:01:01+05:30</updated><author><name>Jestin Joy</name></author><id>tag:blog.jestinjoy.info,2014-01-01:blogging-with-pelican.html</id><summary type="html">&lt;p&gt;After a brief stop, decided to continue with blogging again with pelican.&lt;/p&gt;
+&lt;p&gt;This is how to do it.&lt;/p&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;&lt;p class="first"&gt;Create an account in Github pages&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Install pelican. I have used pip.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;pip install pelican&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Use the pelican-quickstart command to insert default settings&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Edit the contents of pelicanconf.py to add some more contents&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Use the make file to push the contents to Github&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;make github&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 </summary></entry></feed>
