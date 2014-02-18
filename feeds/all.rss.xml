@@ -5,18 +5,18 @@
 &lt;li&gt;&lt;p class="first"&gt;Create an account in Github pages&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Install pelican. I have used pip.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;pip install pelican&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;pre class="literal-block"&gt;
+pip install pelican
+&lt;/pre&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Use the pelican-quickstart command to insert default settings&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Edit the contents of pelicanconf.py to add some more contents&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Use the make file to push the contents to Github&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;make github&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;li&gt;&lt;p class="first"&gt;Use the make file to push the contents to Github:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+make github
+&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jestin Joy</dc:creator><pubDate>Sat, 18 Jan 2014 14:28:00 +0530</pubDate><guid>tag:blog.jestinjoy.info,2014-01-18:blogging-with-pelican.html</guid><category>pelican</category><category>blog</category></item></channel></rss>
