@@ -9,7 +9,7 @@
 pip install pelican
 &lt;/pre&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Use the pelican-quickstart command to insert default settings&lt;/p&gt;
+&lt;li&gt;&lt;p class="first"&gt;Use the pelican-quickstart command to insert default settings. This will ask for some questions. Answer them.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Edit the contents of pelicanconf.py to add some more contents&lt;/p&gt;
 &lt;/li&gt;
