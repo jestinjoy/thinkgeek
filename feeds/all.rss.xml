@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My Blog</title><link>http://blog.jestinjoy.info/</link><description></description><atom:link href="http://blog.jestinjoy.info/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 18 Jan 2014 14:28:00 +0530</lastBuildDate><item><title>Blogging with Pelican</title><link>http://blog.jestinjoy.info/blogging-with-pelican.html</link><description>&lt;p&gt;After a brief stop, decided to continue with blogging again with pelican.&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My Blog</title><link>http://blog.jestinjoy.info/</link><description></description><atom:link href="http://blog.jestinjoy.info/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 20 Feb 2014 20:15:00 +0530</lastBuildDate><item><title>Performance of Python and Julia for sorting</title><link>http://blog.jestinjoy.info/performance-of-python-and-julia-for-sorting.html</link><description>&lt;p&gt;With &lt;a class="reference external" href="http://www.wired.com/wiredenterprise/2014/02/julia/"&gt;Wired&lt;/a&gt; terming it is as &amp;quot;a new language they hope will be suited to practically any task. &amp;quot;, thought of giving it a try. One major feature emphasized about Julia was its speed. So run sorting on 1,00,000 numbers using both Julia and Python. What I have done is&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Run inbuilt sorting methods of Julia and Python on large set of numbers&lt;/li&gt;
+&lt;li&gt;Run custom sorting method (insertion sort based on &lt;a class="reference external" href="http://www.cs.bell-labs.com/cm/cs/pearls/"&gt;programming pearls book&lt;/a&gt;) using Julia and Python&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Julia completed sorting faster than Python for inbuilt and custom versions.  &lt;a class="reference external" href="http://julialang.org/"&gt;This is expected&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I have used matplotlib to plot the result.&lt;/p&gt;
+&lt;p&gt;Using built-in sort method.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;img alt="" src="images/builtin.png" style="width: 10.0px; height: 10.0px;" /&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Using custom sort method.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;img alt="" src="images/custom.png" style="width: 1.5px; height: 1.5px;" /&gt;
+&lt;/blockquote&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jestin Joy</dc:creator><pubDate>Thu, 20 Feb 2014 20:15:00 +0530</pubDate><guid>tag:blog.jestinjoy.info,2014-02-20:performance-of-python-and-julia-for-sorting.html</guid><category>python</category><category>pelican</category><category>sorting</category><category>performance</category></item><item><title>Blogging with Pelican</title><link>http://blog.jestinjoy.info/blogging-with-pelican.html</link><description>&lt;p&gt;After a brief stop, decided to continue with blogging again with pelican.&lt;/p&gt;
 &lt;p&gt;This is how to do it.&lt;/p&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Create an account in &lt;a class="reference external" href="http://pages.github.com/"&gt;Github&lt;/a&gt; pages. Just create the repo. Don't follow the other steps.&lt;/p&gt;
@@ -19,4 +34,4 @@ make github
 &lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jestin Joy</dc:creator><pubDate>Sat, 18 Jan 2014 14:28:00 +0530</pubDate><guid>tag:blog.jestinjoy.info,2014-01-18:blogging-with-pelican.html</guid><category>pelican</category><category>blog</category></item></channel></rss>
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jestin Joy</dc:creator><pubDate>Tue, 18 Feb 2014 14:28:00 +0530</pubDate><guid>tag:blog.jestinjoy.info,2014-02-18:blogging-with-pelican.html</guid><category>pelican</category><category>blog</category></item></channel></rss>
