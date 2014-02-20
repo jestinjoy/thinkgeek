@@ -8,10 +8,10 @@
 &lt;p&gt;I have used matplotlib to plot the result.&lt;/p&gt;
 &lt;p&gt;Using built-in sort method.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;img alt="" src="builtin.png" style="width: 10.0px; height: 10.0px;" /&gt;
+&lt;img alt="" src="pictures/builtin.png" style="width: 10.0px; height: 10.0px;" /&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Using custom sort method.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;img alt="" src="custom.png" style="width: 1.5px; height: 1.5px;" /&gt;
+&lt;img alt="" src="pictures/custom.png" style="width: 1.5px; height: 1.5px;" /&gt;
 &lt;/blockquote&gt;
 </summary><category term="python"></category><category term="pelican"></category><category term="sorting"></category><category term="performance"></category></entry></feed>
