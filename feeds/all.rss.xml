@@ -8,11 +8,11 @@
 &lt;p&gt;I have used matplotlib to plot the result.&lt;/p&gt;
 &lt;p&gt;Using built-in sort method.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;img alt="" src="pictures/builtin.jpeg" style="width: 1.5px; height: 1.5px;" /&gt;
+&lt;img alt="Builtin Sorting" src="pictures/builtin.jpeg" style="width: 50px; height: 50px;" /&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Using custom sort method.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;img alt="" src="pictures/custom.jpeg" style="width: 1.5px; height: 1.5px;" /&gt;
+&lt;img alt="Custom Sorting" src="pictures/custom.jpeg" style="width: 50px; height: 50px;" /&gt;
 &lt;/blockquote&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jestin Joy</dc:creator><pubDate>Thu, 20 Feb 2014 20:15:00 +0530</pubDate><guid>tag:blog.jestinjoy.info,2014-02-20:julia-tested-against-python-using-sorting.html</guid><category>python</category><category>pelican</category><category>sorting</category><category>performance</category></item><item><title>Blogging with Pelican</title><link>http://blog.jestinjoy.info/blogging-with-pelican.html</link><description>&lt;p&gt;After a brief stop, decided to continue with blogging again with pelican.&lt;/p&gt;
 &lt;p&gt;This is how to do it.&lt;/p&gt;
