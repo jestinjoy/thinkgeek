@@ -8,11 +8,11 @@
 &lt;p&gt;I have used matplotlib to plot the result.&lt;/p&gt;
 &lt;p&gt;Using built-in sort method.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;img alt="" src="pictures/test.jpeg" /&gt;
+&lt;img alt="" src="pictures/builtin.jpeg" style="width: 1.5px; height: 1.5px;" /&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Using custom sort method.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;img alt="" src="pictures/custom.png" style="width: 1.5px; height: 1.5px;" /&gt;
+&lt;img alt="" src="pictures/custom.jpeg" style="width: 1.5px; height: 1.5px;" /&gt;
 &lt;/blockquote&gt;
 </summary><category term="python"></category><category term="pelican"></category><category term="sorting"></category><category term="performance"></category></entry><entry><title>Blogging with Pelican</title><link href="http://blog.jestinjoy.info/blogging-with-pelican.html" rel="alternate"></link><updated>2014-02-18T14:28:00+05:30</updated><author><name>Jestin Joy</name></author><id>tag:blog.jestinjoy.info,2014-02-18:blogging-with-pelican.html</id><summary type="html">&lt;p&gt;After a brief stop, decided to continue with blogging again with pelican.&lt;/p&gt;
 &lt;p&gt;This is how to do it.&lt;/p&gt;

@@ -8,10 +8,10 @@
 &lt;p&gt;I have used matplotlib to plot the result.&lt;/p&gt;
 &lt;p&gt;Using built-in sort method.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;img alt="" src="pictures/test.jpeg" /&gt;
+&lt;img alt="" src="pictures/builtin.jpeg" style="width: 1.5px; height: 1.5px;" /&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Using custom sort method.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;img alt="" src="pictures/custom.png" style="width: 1.5px; height: 1.5px;" /&gt;
+&lt;img alt="" src="pictures/custom.jpeg" style="width: 1.5px; height: 1.5px;" /&gt;
 &lt;/blockquote&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jestin Joy</dc:creator><pubDate>Thu, 20 Feb 2014 20:15:00 +0530</pubDate><guid>tag:blog.jestinjoy.info,2014-02-20:julia-tested-against-python-using-sorting.html</guid><category>python</category><category>pelican</category><category>sorting</category><category>performance</category></item></channel></rss>
