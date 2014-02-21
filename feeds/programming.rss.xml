@@ -12,6 +12,6 @@
 &lt;/blockquote&gt;
 &lt;p&gt;Using custom sort method.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;img alt="Custom Sorting" src="pictures/custom.jpeg" style="width: 200px; height: 200px;" /&gt;
+&lt;img alt="Custom Sorting" src="pictures/custom.jpeg" /&gt;
 &lt;/blockquote&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jestin Joy</dc:creator><pubDate>Thu, 20 Feb 2014 20:15:00 +0530</pubDate><guid>tag:blog.jestinjoy.info,2014-02-20:julia-tested-against-python-using-sorting.html</guid><category>python</category><category>pelican</category><category>sorting</category><category>performance</category></item></channel></rss>

@@ -12,6 +12,6 @@
 &lt;/blockquote&gt;
 &lt;p&gt;Using custom sort method.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;img alt="Custom Sorting" src="pictures/custom.jpeg" style="width: 200px; height: 200px;" /&gt;
+&lt;img alt="Custom Sorting" src="pictures/custom.jpeg" /&gt;
 &lt;/blockquote&gt;
 </summary><category term="python"></category><category term="pelican"></category><category term="sorting"></category><category term="performance"></category></entry></feed>
