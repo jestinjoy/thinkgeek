@@ -12,18 +12,18 @@
 10
 11
 12
-13&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;jestinjoy@debian:~$ string=new
-jestinjoy@debian:~$ [[ $string = new ]]
-jestinjoy@debian:~$ echo $?
+13&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;jestinjoy@debian:~&lt;span class="nv"&gt;$ string&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;new
+jestinjoy@debian:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="o"&gt;[[&lt;/span&gt; &lt;span class="nv"&gt;$string&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; new &lt;span class="o"&gt;]]&lt;/span&gt;
+jestinjoy@debian:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$?&lt;/span&gt;
 0
-jestinjoy@debian:~$ [[ $string == new ]]
-jestinjoy@debian:~$ echo $?
+jestinjoy@debian:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="o"&gt;[[&lt;/span&gt; &lt;span class="nv"&gt;$string&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; new &lt;span class="o"&gt;]]&lt;/span&gt;
+jestinjoy@debian:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$?&lt;/span&gt;
 0
-jestinjoy@debian:~$ [[ $string == old ]]
-jestinjoy@debian:~$ echo $?
+jestinjoy@debian:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="o"&gt;[[&lt;/span&gt; &lt;span class="nv"&gt;$string&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; old &lt;span class="o"&gt;]]&lt;/span&gt;
+jestinjoy@debian:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$?&lt;/span&gt;
 1
-jestinjoy@debian:~$ [[ $string = old ]]
-jestinjoy@debian:~$ echo $?
+jestinjoy@debian:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="o"&gt;[[&lt;/span&gt; &lt;span class="nv"&gt;$string&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; old &lt;span class="o"&gt;]]&lt;/span&gt;
+jestinjoy@debian:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$?&lt;/span&gt;
 1
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;echo $? prints the exit status of the previously typed command.  The return value is 0 if the string matches and 1 otherwise.&lt;/p&gt;
