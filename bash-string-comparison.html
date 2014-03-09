@@ -106,18 +106,18 @@ My Blog            </a>
 10
 11
 12
-13</pre></div></td><td class="code"><div class="highlight"><pre>jestinjoy@debian:~<span class="nv">$ string</span><span class="o">=</span>new
-jestinjoy@debian:~<span class="nv">$ </span><span class="o">[[</span> <span class="nv">$string</span> <span class="o">=</span> new <span class="o">]]</span>
-jestinjoy@debian:~<span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$?</span>
+13</pre></div></td><td class="code"><div class="highlight"><pre>jestinjoy@debian:~$ string=new
+jestinjoy@debian:~$ [[ $string = new ]]
+jestinjoy@debian:~$ echo $?
 0
-jestinjoy@debian:~<span class="nv">$ </span><span class="o">[[</span> <span class="nv">$string</span> <span class="o">==</span> new <span class="o">]]</span>
-jestinjoy@debian:~<span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$?</span>
+jestinjoy@debian:~$ [[ $string == new ]]
+jestinjoy@debian:~$ echo $?
 0
-jestinjoy@debian:~<span class="nv">$ </span><span class="o">[[</span> <span class="nv">$string</span> <span class="o">==</span> old <span class="o">]]</span>
-jestinjoy@debian:~<span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$?</span>
+jestinjoy@debian:~$ [[ $string == old ]]
+jestinjoy@debian:~$ echo $?
 1
-jestinjoy@debian:~<span class="nv">$ </span><span class="o">[[</span> <span class="nv">$string</span> <span class="o">=</span> old <span class="o">]]</span>
-jestinjoy@debian:~<span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$?</span>
+jestinjoy@debian:~$ [[ $string = old ]]
+jestinjoy@debian:~$ echo $?
 1
 </pre></div>
 </td></tr></table><p>echo $? prints the exit status of the previously typed command.  The return value is 0 if the string matches and 1 otherwise.</p>
@@ -183,21 +183,6 @@ jestinjoy@debian:~<span class="nv">$ </span><span class="nb">echo</span> <span c
                 <li class="list-group-item"><a href="http://blog.jestinjoy.info/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                     <ul class="list-group" id="tags">
                         <li class="list-group-item tag-4">
-                            <a href="http://blog.jestinjoy.info/tag/bash.html">
-                                bash
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://blog.jestinjoy.info/tag/pelican.html">
-                                pelican
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://blog.jestinjoy.info/tag/julia.html">
-                                julia
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
                             <a href="http://blog.jestinjoy.info/tag/performance.html">
                                 performance
                             </a>
@@ -205,6 +190,11 @@ jestinjoy@debian:~<span class="nv">$ </span><span class="nb">echo</span> <span c
                         <li class="list-group-item tag-4">
                             <a href="http://blog.jestinjoy.info/tag/string.html">
                                 string
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://blog.jestinjoy.info/tag/bash.html">
+                                bash
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -220,6 +210,16 @@ jestinjoy@debian:~<span class="nv">$ </span><span class="nb">echo</span> <span c
                         <li class="list-group-item tag-4">
                             <a href="http://blog.jestinjoy.info/tag/python.html">
                                 python
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://blog.jestinjoy.info/tag/pelican.html">
+                                pelican
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://blog.jestinjoy.info/tag/julia.html">
+                                julia
                             </a>
                         </li>
                     </ul>
