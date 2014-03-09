@@ -93,32 +93,34 @@ My Blog            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <dl class="docutils">
-<dt>String comparison is easy in Bash. We need to put the expression inside a [[ ]]. Following illustrates a Bash session with string comparison. For comparing two strings both = and == works!</dt>
-<dd><div class="first last system-message">
-<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/home/jestinjoy/pelican/content/bash_str_comp.rst</tt>, line 11)</p>
-<p>Content block expected for the &quot;code-block&quot; directive; none found.</p>
-<pre class="literal-block">
-.. code-block:: bash
-        jestinjoy&#64;debian:~$ string=new
-        jestinjoy&#64;debian:~$ [[ $string = new ]]
-        jestinjoy&#64;debian:~$ echo $?
-        0
-        jestinjoy&#64;debian:~$ [[ $string == new ]]
-        jestinjoy&#64;debian:~$ echo $?
-        0
-        jestinjoy&#64;debian:~$ [[ $string == old ]]
-        jestinjoy&#64;debian:~$ echo $?
-        1
-        jestinjoy&#64;debian:~$ [[ $string = old ]]
-        jestinjoy&#64;debian:~$ echo $?
-        1
-
-</pre>
-</div>
-</dd>
-</dl>
-<p>echo $? prints the exit status of the previously typed command.  The return value is 0 if the string matches and 1 otherwise.</p>
+                <p>String comparison is easy in Bash. We need to put the expression inside a [[ ]]. Following illustrates a Bash session with string comparison. For comparing two strings both = and == works!</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="highlight"><pre>jestinjoy@debian:~<span class="nv">$ string</span><span class="o">=</span>new
+jestinjoy@debian:~<span class="nv">$ </span><span class="o">[[</span> <span class="nv">$string</span> <span class="o">=</span> new <span class="o">]]</span>
+jestinjoy@debian:~<span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$?</span>
+0
+jestinjoy@debian:~<span class="nv">$ </span><span class="o">[[</span> <span class="nv">$string</span> <span class="o">==</span> new <span class="o">]]</span>
+jestinjoy@debian:~<span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$?</span>
+0
+jestinjoy@debian:~<span class="nv">$ </span><span class="o">[[</span> <span class="nv">$string</span> <span class="o">==</span> old <span class="o">]]</span>
+jestinjoy@debian:~<span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$?</span>
+1
+jestinjoy@debian:~<span class="nv">$ </span><span class="o">[[</span> <span class="nv">$string</span> <span class="o">=</span> old <span class="o">]]</span>
+jestinjoy@debian:~<span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$?</span>
+1
+</pre></div>
+</td></tr></table><p>echo $? prints the exit status of the previously typed command.  The return value is 0 if the string matches and 1 otherwise.</p>
 <p>We can also use <a class="reference external" href="http://www.gnu.org/software/bash/manual/bashref.html#Pattern-Matching">patterns</a> inside [[ ]].</p>
 
             </div>
@@ -181,28 +183,13 @@ My Blog            </a>
                 <li class="list-group-item"><a href="http://blog.jestinjoy.info/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                     <ul class="list-group" id="tags">
                         <li class="list-group-item tag-4">
-                            <a href="http://blog.jestinjoy.info/tag/julia.html">
-                                julia
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://blog.jestinjoy.info/tag/sorting.html">
-                                sorting
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://blog.jestinjoy.info/tag/string.html">
-                                string
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
                             <a href="http://blog.jestinjoy.info/tag/performance.html">
                                 performance
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
-                            <a href="http://blog.jestinjoy.info/tag/python.html">
-                                python
+                            <a href="http://blog.jestinjoy.info/tag/julia.html">
+                                julia
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
@@ -216,8 +203,23 @@ My Blog            </a>
                             </a>
                         </li>
                         <li class="list-group-item tag-4">
+                            <a href="http://blog.jestinjoy.info/tag/python.html">
+                                python
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
                             <a href="http://blog.jestinjoy.info/tag/blog.html">
                                 blog
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://blog.jestinjoy.info/tag/string.html">
+                                string
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://blog.jestinjoy.info/tag/sorting.html">
+                                sorting
                             </a>
                         </li>
                     </ul>
