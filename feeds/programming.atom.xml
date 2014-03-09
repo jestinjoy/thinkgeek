@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>My Blog</title><link href="http://blog.jestinjoy.info/" rel="alternate"></link><link href="http://blog.jestinjoy.info/feeds/programming.atom.xml" rel="self"></link><id>http://blog.jestinjoy.info/</id><updated>2014-03-09T19:30:00+05:30</updated><entry><title>Bash string comparison</title><link href="http://blog.jestinjoy.info/bash-string-comparison.html" rel="alternate"></link><updated>2014-03-09T19:30:00+05:30</updated><author><name>Jestin Joy</name></author><id>tag:blog.jestinjoy.info,2014-03-09:bash-string-comparison.html</id><summary type="html">&lt;p&gt;String comparison is easy in Bash. We need to put the expression inside a [[ ]]. Following illustrates a Bash session with string comparison. For comparing two strings both = and == works!&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;jestinjoy@debian:~&lt;span class="nv"&gt;$ string&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;new
-jestinjoy@debian:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="o"&gt;[[&lt;/span&gt; &lt;span class="nv"&gt;$string&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; new &lt;span class="o"&gt;]]&lt;/span&gt;
-jestinjoy@debian:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$?&lt;/span&gt;
-0
-jestinjoy@debian:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="o"&gt;[[&lt;/span&gt; &lt;span class="nv"&gt;$string&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; new &lt;span class="o"&gt;]]&lt;/span&gt;
-jestinjoy@debian:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$?&lt;/span&gt;
-0
-jestinjoy@debian:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="o"&gt;[[&lt;/span&gt; &lt;span class="nv"&gt;$string&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; old &lt;span class="o"&gt;]]&lt;/span&gt;
-jestinjoy@debian:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$?&lt;/span&gt;
-1
-jestinjoy@debian:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="o"&gt;[[&lt;/span&gt; &lt;span class="nv"&gt;$string&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; old &lt;span class="o"&gt;]]&lt;/span&gt;
-jestinjoy@debian:~&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$?&lt;/span&gt;
-1
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>My Blog</title><link href="http://blog.jestinjoy.info/" rel="alternate"></link><link href="http://blog.jestinjoy.info/feeds/programming.atom.xml" rel="self"></link><id>http://blog.jestinjoy.info/</id><updated>2014-03-09T19:30:00+05:30</updated><entry><title>Bash string comparison</title><link href="http://blog.jestinjoy.info/bash-string-comparison.html" rel="alternate"></link><updated>2014-03-09T19:30:00+05:30</updated><author><name>Jestin Joy</name></author><id>tag:blog.jestinjoy.info,2014-03-09:bash-string-comparison.html</id><summary type="html">&lt;dl class="docutils"&gt;
+&lt;dt&gt;String comparison is easy in Bash. We need to put the expression inside a [[ ]]. Following illustrates a Bash session with string comparison. For comparing two strings both = and == works!&lt;/dt&gt;
+&lt;dd&gt;&lt;div class="first last system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;/home/jestinjoy/pelican/content/bash_str_comp.rst&lt;/tt&gt;, line 11)&lt;/p&gt;
+&lt;p&gt;Content block expected for the &amp;quot;code-block&amp;quot; directive; none found.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. code-block:: bash
+        jestinjoy&amp;#64;debian:~$ string=new
+        jestinjoy&amp;#64;debian:~$ [[ $string = new ]]
+        jestinjoy&amp;#64;debian:~$ echo $?
+        0
+        jestinjoy&amp;#64;debian:~$ [[ $string == new ]]
+        jestinjoy&amp;#64;debian:~$ echo $?
+        0
+        jestinjoy&amp;#64;debian:~$ [[ $string == old ]]
+        jestinjoy&amp;#64;debian:~$ echo $?
+        1
+        jestinjoy&amp;#64;debian:~$ [[ $string = old ]]
+        jestinjoy&amp;#64;debian:~$ echo $?
+        1
+
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
 &lt;p&gt;echo $? prints the exit status of the previously typed command.  The return value is 0 if the string matches and 1 otherwise.&lt;/p&gt;
 &lt;p&gt;We can also use &lt;a class="reference external" href="http://www.gnu.org/software/bash/manual/bashref.html#Pattern-Matching"&gt;patterns&lt;/a&gt; inside [[ ]].&lt;/p&gt;
 </summary><category term="bash"></category><category term="string"></category></entry><entry><title>Julia tested against Python using sorting</title><link href="http://blog.jestinjoy.info/julia-tested-against-python-using-sorting.html" rel="alternate"></link><updated>2014-02-20T20:15:00+05:30</updated><author><name>Jestin Joy</name></author><id>tag:blog.jestinjoy.info,2014-02-20:julia-tested-against-python-using-sorting.html</id><summary type="html">&lt;p&gt;With &lt;a class="reference external" href="http://www.wired.com/wiredenterprise/2014/02/julia/"&gt;Wired&lt;/a&gt; terming it is as &amp;quot;a new language they hope will be suited to practically any task. &amp;quot;, thought of giving it a try. One major feature emphasized about Julia was its speed. So run sorting on 1,00,000 numbers using both Julia and Python. What I have done is&lt;/p&gt;
