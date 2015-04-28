@@ -11,8 +11,8 @@
 &lt;h2&gt;Upgrading&lt;/h2&gt;
 &lt;p&gt;For upgrading, after adding jessie repos, type in terminal&lt;/p&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;apt-get&lt;/span&gt; &lt;span class="pre"&gt;dist-upgrade&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
-&lt;p&gt;dist-upgrade in addition to performing the function of upgrade, also intelligently handles changing dependencies with new versions of packages&lt;/p&gt;
-&lt;p&gt;Its better to do this from the command line by pressing alt-ctrl-f1 and switching to root user. When I did dist-upgrade from GUI, I couldnt unlock the lock screen during upgradation.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;dist-upgrade in addition to performing the function of upgrade, also intelligently handles changing dependencies with new versions of packages&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Its better to do this from the command line by pressing &lt;strong&gt;alt-ctrl-f1&lt;/strong&gt; and switching to &lt;strong&gt;root&lt;/strong&gt; user. When I did &lt;em&gt;dist-upgrade&lt;/em&gt; from GUI, I couldnt unlock the lock screen during upgradation.&lt;/p&gt;
 &lt;p&gt;Debian Jessie sources.list can be have from &lt;a class="reference external" href="https://wiki.debian.org/SourcesList"&gt;Debian site&lt;/a&gt;.&lt;/p&gt;
 &lt;img alt="GNOME" class="align-center" src="pictures/gnome.jpg" /&gt;
 &lt;/div&gt;
