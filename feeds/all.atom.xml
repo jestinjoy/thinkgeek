@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>My Blog</title><link href="http://blog.jestinjoy.info/" rel="alternate"></link><link href="http://blog.jestinjoy.info/feeds/all.atom.xml" rel="self"></link><id>http://blog.jestinjoy.info/</id><updated>2014-07-27T17:28:00+05:30</updated><entry><title>How easy it is to organize a Free Software Conference</title><link href="http://blog.jestinjoy.info/how-easy-it-is-to-organize-a-free-software-conference.html" rel="alternate"></link><updated>2014-07-27T17:28:00+05:30</updated><author><name>Jestin Joy</name></author><id>tag:blog.jestinjoy.info,2014-07-27:how-easy-it-is-to-organize-a-free-software-conference.html</id><summary type="html">&lt;p&gt;In India undergraduate academic conferences are conducted regularly by colleges/universities to show their expertise and for publicity purposes. The challenges faced by the  organization range from selecting speakers to arranging audience. Most technical conference in undergraduate streams are just programs consisting mainly of cultural and fun events.  If the task is to conduct a Free Software Academic conference then it is more challenging. It involves&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>My Blog</title><link href="http://blog.jestinjoy.info/" rel="alternate"></link><link href="http://blog.jestinjoy.info/feeds/all.atom.xml" rel="self"></link><id>http://blog.jestinjoy.info/</id><updated>2015-04-28T17:28:00+05:30</updated><entry><title>Debian Jessie: First Look</title><link href="http://blog.jestinjoy.info/debian-jessie-first-look.html" rel="alternate"></link><updated>2015-04-28T17:28:00+05:30</updated><author><name>Jestin Joy</name></author><id>tag:blog.jestinjoy.info,2015-04-28:debian-jessie-first-look.html</id><summary type="html">&lt;p&gt;Much awaited Debian 8.0 aka Jessie was released on April 25, 2015. It comes with 5 year promised support from Debian community (upto April/May 2020). Debian 7 &amp;quot;Wheezy&amp;quot; support ends on May 2018. Debian ships with systemd which makes systemd the process id 1 instead of init. Major updatded packages include&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Linux 3.16.7&lt;/li&gt;
+&lt;li&gt;GNOME 3.14&lt;/li&gt;
+&lt;li&gt;GCC 4.9.2&lt;/li&gt;
+&lt;li&gt;LibreOffice 4.3.3&lt;/li&gt;
+&lt;li&gt;Iceweasel 31.6.0esr&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="section" id="upgrading"&gt;
+&lt;h2&gt;Upgrading&lt;/h2&gt;
+&lt;p&gt;For upgrading, after adding jessie repos, type&lt;/p&gt;
+&lt;p&gt;apt-get dist-upgrade&lt;/p&gt;
+&lt;p&gt;dist-upgrade in addition to performing the function of upgrade, also intelligently handles changing dependencies with new versions of packages&lt;/p&gt;
+&lt;p&gt;Its better to do this from the command line by pressing alt-ctrl-f1 and switching to root user. When I did dist-upgrade from GUI, I couldnt unlock the lock screen during upgradation.&lt;/p&gt;
+&lt;p&gt;Debian Jessie sources.list can be have from &lt;a class="reference external" href="https://wiki.debian.org/SourcesList"&gt;Debian site&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="free_software"></category><category term="debian"></category><category term="linux"></category></entry><entry><title>How easy it is to organize a Free Software Conference</title><link href="http://blog.jestinjoy.info/how-easy-it-is-to-organize-a-free-software-conference.html" rel="alternate"></link><updated>2014-07-27T17:28:00+05:30</updated><author><name>Jestin Joy</name></author><id>tag:blog.jestinjoy.info,2014-07-27:how-easy-it-is-to-organize-a-free-software-conference.html</id><summary type="html">&lt;p&gt;In India undergraduate academic conferences are conducted regularly by colleges/universities to show their expertise and for publicity purposes. The challenges faced by the  organization range from selecting speakers to arranging audience. Most technical conference in undergraduate streams are just programs consisting mainly of cultural and fun events.  If the task is to conduct a Free Software Academic conference then it is more challenging. It involves&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Selecting speakers from Free Software Stream&lt;/li&gt;
 &lt;li&gt;Convince authorities to conduct a Free Software Conference&lt;/li&gt;
