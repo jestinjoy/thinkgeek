@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Think Geek</title><link>http://blog.jestinjoy.info/</link><description></description><atom:link href="http://blog.jestinjoy.info/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 31 Jul 2015 13:01:00 +0530</lastBuildDate><item><title>Setting a theme in Pelican</title><link>http://blog.jestinjoy.info/setting-a-theme-in-pelican.html</link><description>&lt;p&gt;This explains how to set a new theme for your blog. Pelican comes with a command called &lt;em&gt;pelican-themes&lt;/em&gt;. Current themes can be listed with the command&lt;/p&gt;
-&lt;p&gt;&lt;tt class="docutils literal"&gt;$ &lt;span class="pre"&gt;pelican-themes&lt;/span&gt; &lt;span class="pre"&gt;-l&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;pelican-themes&lt;/span&gt; &lt;span class="pre"&gt;-l&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
 &lt;p&gt;New theme can be installed with the command&lt;/p&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;pelican-themes&lt;/span&gt; &lt;span class="pre"&gt;--install&lt;/span&gt; &lt;span class="pre"&gt;~/pelican-themes/bootstrap2&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
 &lt;p&gt;where &lt;em&gt;~/pelican-themes/bootstrap2&lt;/em&gt; represents the downloaded theme. Themes can be downloaded from the &lt;a class="reference external" href="https://github.com/getpelican/pelican-themes"&gt;pelican theme Github&lt;/a&gt;.&lt;/p&gt;
