@@ -1,57 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-          <title>My Blog</title>
-        <meta charset="utf-8" />
-        <link href="http://blog.jestinjoy.info/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="My Blog Full Atom Feed" />
-        <link href="http://blog.jestinjoy.info/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="My Blog Full RSS Feed" />
-        <link href="http://blog.jestinjoy.info/feeds/nlp.atom.xml" type="application/atom+xml" rel="alternate" title="My Blog Categories Atom Feed" />
-        <link href="http://blog.jestinjoy.info/feeds/nlp.rss.xml" type="application/rss+xml" rel="alternate" title="My Blog Categories RSS Feed" />
+  <head>
+    <meta charset="utf-8">
+    <title>How to run Stanford NLP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jestin Joy">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="http://blog.jestinjoy.info/theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="http://blog.jestinjoy.info/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="http://blog.jestinjoy.info/theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="http://blog.jestinjoy.info/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://blog.jestinjoy.info/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="http://blog.jestinjoy.info/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://blog.jestinjoy.info/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://blog.jestinjoy.info/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="http://blog.jestinjoy.info/" type="application/atom+xml" rel="alternate" title="Think Geek ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://blog.jestinjoy.info/index.html">Think Geek </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="http://blog.jestinjoy.info/category/tech.html">
+						<i class="icon-folder-open icon-large"></i>tech
+					</a>
+                  </li>
+                  <li class="active">
+                    <a href="http://blog.jestinjoy.info/category/nlp.html">
+						<i class="icon-folder-open icon-large"></i>NLP
+					</a>
+                  </li>
+                  <li >
+                    <a href="http://blog.jestinjoy.info/category/general.html">
+						<i class="icon-folder-open icon-large"></i>general
+					</a>
+                  </li>
+                  <li >
+                    <a href="http://blog.jestinjoy.info/category/education.html">
+						<i class="icon-folder-open icon-large"></i>education
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="http://blog.jestinjoy.info/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to How to run Stanford NLP">
+                                        How to run Stanford NLP
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2015-07-30T17:28:00">
+        <i class="icon-calendar"></i>Thu 30 July 2015
+</abbr>
+<span class="label">By</span>
+<a href="http://blog.jestinjoy.info/author/jestin-joy.html"><i class="icon-user"></i>Jestin Joy</a>
+<span class="label">Category</span>
+<a href="http://blog.jestinjoy.info/category/nlp.html"><i class="icon-folder-open"></i>NLP</a>.
 
 
-
-    <meta name="tags" content="free_software" />
-    <meta name="tags" content="nlp" />
-    <meta name="tags" content="linux" />
-
-</head>
-
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://blog.jestinjoy.info/">My Blog <strong></strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-        </ul></nav><!-- /#menu -->
-<section id="content" class="body">
-  <header>
-    <h2 class="entry-title">
-      <a href="http://blog.jestinjoy.info/how-to-run-stanford-nlp.html" rel="bookmark"
-         title="Permalink to How to run Stanford NLP">How to run Stanford NLP</a></h2>
- 
-  </header>
-  <footer class="post-info">
-    <abbr class="published" title="2015-07-30T17:28:00+05:30">
-      Thu 30 July 2015
-    </abbr>
-    <address class="vcard author">
-      By           <a class="url fn" href="http://blog.jestinjoy.info/author/jestin-joy.html">Jestin Joy</a>
-    </address>
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
-    <p>This article gives information about how to get Stanfor NLP rnn package up and running. Stanford nlp can be downloaded from <a class="reference external" href="https://github.com/stanfordnlp/CoreNLP">**Stanford CoreNLP Github site**</a>. Make sure you have <a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">**latest Java**</a> installed.</p>
+<span class="label">Tags</span>
+	<a href="http://blog.jestinjoy.info/tag/free_software.html"><i class="icon-tag"></i>free_software</a>
+	<a href="http://blog.jestinjoy.info/tag/nlp.html"><i class="icon-tag"></i>nlp</a>
+	<a href="http://blog.jestinjoy.info/tag/linux.html"><i class="icon-tag"></i>linux</a>
+</footer><!-- /.post-info -->                </div>
+                <p>This article gives information about how to get Stanfor NLP rnn package up and running. Stanford nlp can be downloaded from <a class="reference external" href="https://github.com/stanfordnlp/CoreNLP">**Stanford CoreNLP Github site**</a>. Make sure you have <a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">**latest Java**</a> installed.</p>
 <p>Next step is to build the package. Use the following command.</p>
 <p><tt class="docutils literal">ant</tt></p>
 <p>Run the rnn package by moving into classes directory and run</p>
 <p><tt class="docutils literal">$ java <span class="pre">-mx4g</span> edu.stanford.nlp.parser.dvparser.DVParser</tt></p>
 <p>More information about training and other details cane be have from <a class="reference external" href="http://nlp.stanford.edu/software/parser-faq.shtml#rnn">**Stanford NLP site**</a></p>
 
-  </div><!-- /.entry-content -->
+                </div><!-- /.entry-content -->
+                <div class="comments">
+                <h2>Comments !</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "how-to-run-stanford-nlp.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'http://thinkgeek1.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
+                </div>
+        </article>
 </section>
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
-</body>
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://stallman.org/"><i class="icon-external-link"></i>Stallman Home</a></li>
+    <li><a href="http://www.fsf.org/"><i class="icon-external-link"></i>FSF</a></li>
+    <li><a href="http://blog.computationalcomplexity.org/"><i class="icon-external-link"></i>Computational Complexity Blog</a></li>
+    <li><a href="http://www.nytimes.com/pages/technology/"><i class="icon-external-link"></i>NYTimes Tech</a></li>
+    <li><a href="http://www.theguardian.com/technology"><i class="icon-external-link"></i>The Guardian Tech</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="http://blog.jestinjoy.info/" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+    <li><a href="https://twitter.com/jestinjoy"><i class="icon-twitter-sign icon-large"></i>twitter</a></li>
+    <li><a href="https://github.com/jestinjoy/"><i class="icon-github-sign icon-large"></i>github</a></li>
+    <li><a href="https://www.facebook.com/jestinjoy"><i class="icon-facebook-sign icon-large"></i>facebook</a></li>
+    <li><a href="http://scholar.google.co.in/citations?user=KBz6YIMAAAAJ&hl=en"><i class="icon-Google Scholar-sign icon-large"></i>Google Scholar</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="http://blog.jestinjoy.info/category/tech.html">
+    <i class="icon-folder-open icon-large"></i>tech
+</a>
+</li>
+<li>
+<a href="http://blog.jestinjoy.info/category/nlp.html">
+    <i class="icon-folder-open icon-large"></i>NLP
+</a>
+</li>
+<li>
+<a href="http://blog.jestinjoy.info/category/general.html">
+    <i class="icon-folder-open icon-large"></i>general
+</a>
+</li>
+<li>
+<a href="http://blog.jestinjoy.info/category/education.html">
+    <i class="icon-folder-open icon-large"></i>education
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+<li class="tag-2">
+    <a href="http://blog.jestinjoy.info/tag/linux.html">
+        <i class="icon-tag icon-large"></i>linux
+    </a>
+</li>
+<li class="tag-4">
+    <a href="http://blog.jestinjoy.info/tag/python.html">
+        <i class="icon-tag icon-large"></i>python
+    </a>
+</li>
+<li class="tag-4">
+    <a href="http://blog.jestinjoy.info/tag/nlp.html">
+        <i class="icon-tag icon-large"></i>nlp
+    </a>
+</li>
+<li class="tag-4">
+    <a href="http://blog.jestinjoy.info/tag/debian.html">
+        <i class="icon-tag icon-large"></i>debian
+    </a>
+</li>
+<li class="tag-4">
+    <a href="http://blog.jestinjoy.info/tag/conference.html">
+        <i class="icon-tag icon-large"></i>conference
+    </a>
+</li>
+<li class="tag-4">
+    <a href="http://blog.jestinjoy.info/tag/education.html">
+        <i class="icon-tag icon-large"></i>education
+    </a>
+</li>
+<li class="tag-4">
+    <a href="http://blog.jestinjoy.info/tag/pelican.html">
+        <i class="icon-tag icon-large"></i>pelican
+    </a>
+</li>
+<li class="tag-1">
+    <a href="http://blog.jestinjoy.info/tag/free_software.html">
+        <i class="icon-tag icon-large"></i>free_software
+    </a>
+</li>
+<li class="tag-4">
+    <a href="http://blog.jestinjoy.info/tag/blog.html">
+        <i class="icon-tag icon-large"></i>blog
+    </a>
+</li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-37385333-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<script type="text/javascript">
+    var disqus_shortname = 'thinkgeek1';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://blog.jestinjoy.info/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="http://blog.jestinjoy.info/theme/js/bootstrap.min.js"></script>
+  </body>
 </html>
