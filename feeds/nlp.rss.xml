@@ -3,8 +3,8 @@
 &lt;p&gt;The first thing you need to do is to upgrade NLTK to the latest version since, previous versions had a bug that prevented it from running MaltParser. NLTK can be upgraded with the command&lt;/p&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;pip install &lt;span class="pre"&gt;-U&lt;/span&gt; nltk&lt;/tt&gt;&lt;/p&gt;
 &lt;p&gt;Next step is to &lt;a class="reference external" href="http://www.maltparser.org/download.html"&gt;download MaltParser&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;For english if you are not going for training, download pre trained mco file.&lt;/p&gt;
-&lt;p&gt;This is it.&lt;/p&gt;
+&lt;p&gt;Use &lt;a class="reference external" href="http://www.maltparser.org/mco/english_parser/engmalt.poly-1.7.mco"&gt;pre trained mco file&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Thats it.&lt;/p&gt;
 &lt;p&gt;The following programs explains the working.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;nltk.parse.malt&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;MaltParser&lt;/span&gt;
 &lt;span class="n"&gt;mp&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;MaltParser&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;/other/apps/maltparser-1.8.1&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;engmalt.poly-1.7.mco&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
