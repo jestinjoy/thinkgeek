@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Think Geek</title>
+    <title>How to run MaltParser with NLTK under GNU/Linux</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Jestin Joy">
@@ -69,7 +69,7 @@
 						<i class="icon-folder-open icon-large"></i>tech
 					</a>
                   </li>
-                  <li >
+                  <li class="active">
                     <a href="http://blog.jestinjoy.info/category/nlp.html">
 						<i class="icon-folder-open icon-large"></i>NLP
 					</a>
@@ -99,64 +99,70 @@
     <div class="container-fluid">
       <div class="row">
         <div class="span9" id="content">
-<ul>
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
-<li class="tag-2">
-	<a href="http://blog.jestinjoy.info/tag/pelican.html">
-		<i class="icon-tag icon-large"></i>pelican
-	</a>
-</li>
-<li class="tag-2">
-	<a href="http://blog.jestinjoy.info/tag/blog.html">
-		<i class="icon-tag icon-large"></i>blog
-	</a>
-</li>
-<li class="tag-4">
-	<a href="http://blog.jestinjoy.info/tag/nltk.html">
-		<i class="icon-tag icon-large"></i>nltk
-	</a>
-</li>
-<li class="tag-2">
-	<a href="http://blog.jestinjoy.info/tag/nlp.html">
-		<i class="icon-tag icon-large"></i>nlp
-	</a>
-</li>
-<li class="tag-4">
-	<a href="http://blog.jestinjoy.info/tag/education.html">
-		<i class="icon-tag icon-large"></i>education
-	</a>
-</li>
-<li class="tag-4">
-	<a href="http://blog.jestinjoy.info/tag/parser.html">
-		<i class="icon-tag icon-large"></i>parser
-	</a>
-</li>
-<li class="tag-4">
-	<a href="http://blog.jestinjoy.info/tag/debian.html">
-		<i class="icon-tag icon-large"></i>debian
-	</a>
-</li>
-<li class="tag-4">
-	<a href="http://blog.jestinjoy.info/tag/python.html">
-		<i class="icon-tag icon-large"></i>python
-	</a>
-</li>
-<li class="tag-4">
-	<a href="http://blog.jestinjoy.info/tag/conference.html">
-		<i class="icon-tag icon-large"></i>conference
-	</a>
-</li>
-<li class="tag-1">
-	<a href="http://blog.jestinjoy.info/tag/free_software.html">
-		<i class="icon-tag icon-large"></i>free_software
-	</a>
-</li>
-<li class="tag-1">
-	<a href="http://blog.jestinjoy.info/tag/linux.html">
-		<i class="icon-tag icon-large"></i>linux
-	</a>
-</li>
-</ul>
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to How to run MaltParser with NLTK under GNU/Linux">
+                                        How to run MaltParser with NLTK under GNU/Linux
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2015-10-09T17:28:00">
+        <i class="icon-calendar"></i>Fri 09 October 2015
+</abbr>
+<span class="label">By</span>
+<a href="http://blog.jestinjoy.info/author/jestin-joy.html"><i class="icon-user"></i>Jestin Joy</a>
+<span class="label">Category</span>
+<a href="http://blog.jestinjoy.info/category/nlp.html"><i class="icon-folder-open"></i>NLP</a>.
+
+
+<span class="label">Tags</span>
+	<a href="http://blog.jestinjoy.info/tag/free_software.html"><i class="icon-tag"></i>free_software</a>
+	<a href="http://blog.jestinjoy.info/tag/nlp.html"><i class="icon-tag"></i>nlp</a>
+	<a href="http://blog.jestinjoy.info/tag/linux.html"><i class="icon-tag"></i>linux</a>
+	<a href="http://blog.jestinjoy.info/tag/nltk.html"><i class="icon-tag"></i>nltk</a>
+	<a href="http://blog.jestinjoy.info/tag/parser.html"><i class="icon-tag"></i>parser</a>
+</footer><!-- /.post-info -->                </div>
+                <p>Thanks to this Stackoverflow post, I could get MaltParser get running with NLTK under Linux.</p>
+<p>The first thing you need to do is to upgrade NLTK to the latest version since, previous versions had a bug that prevented it from running MaltParser. NLTK can be upgraded with the command</p>
+<p><tt class="docutils literal">pip install <span class="pre">-U</span> nltk</tt></p>
+<p>Next step is to <a class="reference external" href="http://www.maltparser.org/download.html">download MaltParser</a>.</p>
+<p>For english if you are not going for training, download pre trained mco file.</p>
+<p>This is it.</p>
+<p>The following programs explains the working.</p>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">nltk.parse.malt</span> <span class="kn">import</span> <span class="n">MaltParser</span>
+<span class="n">mp</span> <span class="o">=</span> <span class="n">MaltParser</span><span class="p">(</span><span class="s">&quot;/other/apps/maltparser-1.8.1&quot;</span><span class="p">,</span><span class="s">&quot;engmalt.poly-1.7.mco&quot;</span><span class="p">)</span>
+<span class="n">sent1</span> <span class="o">=</span> <span class="s">&#39;What is your name&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">mp</span><span class="o">.</span><span class="n">parse_one</span><span class="p">(</span><span class="n">sent1</span><span class="p">)</span><span class="o">.</span><span class="n">tree</span><span class="p">())</span>
+</pre></div>
+<p>For the function MaltParser the arguments are the path to the downloaded MaltParser and the download mco file.</p>
+<p>This will give you the output</p>
+<p><tt class="docutils literal">(is What (name your))</tt></p>
+
+                </div><!-- /.entry-content -->
+                <div class="comments">
+                <h2>Comments !</h2>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                           var disqus_identifier = "how-to-run-maltparser-with-nltk-under-gnulinux.html";
+                           (function() {
+                                var dsq = document.createElement('script');
+                                dsq.type = 'text/javascript'; dsq.async = true;
+                                dsq.src = 'http://thinkgeek1.disqus.com/embed.js';
+                                (document.getElementsByTagName('head')[0] ||
+                                 document.getElementsByTagName('body')[0]).appendChild(dsq);
+                          })();
+                        </script>
+                </div>
+        </article>
+</section>
         </div><!--/span-->
 
                 <div class="span3 well sidebar-nav" id="sidebar">
