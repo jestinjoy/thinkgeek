@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Think Geek</title><link>http://blog.jestinjoy.info/</link><description></description><atom:link href="http://blog.jestinjoy.info/feeds/linux.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 31 Aug 2016 17:28:00 +0530</lastBuildDate><item><title>Arch Linux installation for a beginner</title><link>http://blog.jestinjoy.info/arch-linux-installation-for-a-beginner.html</link><description>&lt;p&gt;First released in 2002, &lt;a class="reference external" href="https://www.archlinux.org/"&gt;Arch Linux&lt;/a&gt; boasts of of delivering latest packages. This is a good thing considering you are using Debian. So thought of giving a try on my new HP Probook.&lt;/p&gt;
+&lt;p&gt;This is what GNU has to say about Arch&lt;/p&gt;
+&lt;blockquote&gt;
+Arch has the two usual problems: there's no clear policy about what             software can be included, and nonfree blobs are shipped with their kernel,              Linux. Arch also has no policy about not distributing nonfree software          through their normal channels.&lt;/blockquote&gt;
+&lt;p&gt;Before start installing Arch, the best thing to do is to find the fastest mirrors available. For this you need to install the package reflector using the package manager pacman&lt;/p&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;pacman &lt;span class="pre"&gt;-S&lt;/span&gt; reflector&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;Then run it with&lt;/p&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;reflector &lt;span class="pre"&gt;--verbose&lt;/span&gt; &lt;span class="pre"&gt;-l&lt;/span&gt; 5 &lt;span class="pre"&gt;--sort&lt;/span&gt; rate &lt;span class="pre"&gt;--save&lt;/span&gt; /etc/pacman.d/mirrorlist&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;Then  I used the tutorial in &lt;a class="reference external" href="http://www.wikihow.com/Install-Arch-Linux"&gt;Wikihow to install Arch&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To install GNOME.&lt;/p&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;pacman &lt;span class="pre"&gt;-S&lt;/span&gt; gnome &lt;span class="pre"&gt;gnome-extra&lt;/span&gt; &lt;span class="pre"&gt;gnome-system-tools&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;Then install GDM&lt;/p&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;pacman &lt;span class="pre"&gt;-S&lt;/span&gt; gdm&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;Run the following command to start GDM automatically&lt;/p&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;systemctl enable gdm.service&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;Then reboot and if everything goes will you will be getting Arch with Gnome.&lt;/p&gt;
+&lt;p&gt;To install xorg, run&lt;/p&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;pacman &lt;span class="pre"&gt;-S&lt;/span&gt; &lt;span class="pre"&gt;xorg-server&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;Follow the Arch wiki for installing &lt;a class="reference external" href="https://wiki.archlinux.org/index.php/xorg#Installation"&gt;display driver&lt;/a&gt;.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jestin Joy</dc:creator><pubDate>Wed, 31 Aug 2016 17:28:00 +0530</pubDate><guid>tag:blog.jestinjoy.info,2016-08-31:arch-linux-installation-for-a-beginner.html</guid><category>free_software</category><category>linux</category><category>arch_linux</category></item></channel></rss>

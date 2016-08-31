@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>How easy it is to organize a Free Software Conference</title>
+    <title>Arch Linux installation for a beginner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Jestin Joy">
@@ -64,7 +64,7 @@
           <div class="nav-collapse">
             <ul class="nav">
                           <li class="divider-vertical"></li>
-                  <li class="active">
+                  <li >
                     <a href="http://blog.jestinjoy.info/category/tech.html">
 						<i class="icon-folder-open icon-large"></i>tech
 					</a>
@@ -74,7 +74,7 @@
 						<i class="icon-folder-open icon-large"></i>NLP
 					</a>
                   </li>
-                  <li >
+                  <li class="active">
                     <a href="http://blog.jestinjoy.info/category/linux.html">
 						<i class="icon-folder-open icon-large"></i>Linux
 					</a>
@@ -110,8 +110,8 @@
                         <h1>
                                 <a href=""
                                         rel="bookmark"
-                                        title="Permalink to How easy it is to organize a Free Software Conference">
-                                        How easy it is to organize a Free Software Conference
+                                        title="Permalink to Arch Linux installation for a beginner">
+                                        Arch Linux installation for a beginner
                                 </a>
                         </h1>
                 </header>
@@ -119,50 +119,46 @@
                 <div class="well">
 <footer class="post-info">
 <span class="label">Date</span>
-<abbr class="published" title="2014-07-27T17:28:00">
-        <i class="icon-calendar"></i>Sun 27 July 2014
+<abbr class="published" title="2016-08-31T17:28:00">
+        <i class="icon-calendar"></i>Wed 31 August 2016
 </abbr>
 <span class="label">By</span>
 <a href="http://blog.jestinjoy.info/author/jestin-joy.html"><i class="icon-user"></i>Jestin Joy</a>
 <span class="label">Category</span>
-<a href="http://blog.jestinjoy.info/category/tech.html"><i class="icon-folder-open"></i>tech</a>.
+<a href="http://blog.jestinjoy.info/category/linux.html"><i class="icon-folder-open"></i>Linux</a>.
 
 
 <span class="label">Tags</span>
 	<a href="http://blog.jestinjoy.info/tag/free_software.html"><i class="icon-tag"></i>free_software</a>
-	<a href="http://blog.jestinjoy.info/tag/conference.html"><i class="icon-tag"></i>conference</a>
+	<a href="http://blog.jestinjoy.info/tag/linux.html"><i class="icon-tag"></i>linux</a>
+	<a href="http://blog.jestinjoy.info/tag/arch_linux.html"><i class="icon-tag"></i>arch_linux</a>
 </footer><!-- /.post-info -->                </div>
-                <p>In India undergraduate academic conferences are conducted regularly by colleges/universities to show their expertise and for publicity purposes. The challenges faced by the  organization range from selecting speakers to arranging audience. Most technical conference in undergraduate streams are just programs consisting mainly of cultural and fun events.  If the task is to conduct a Free Software Academic conference then it is more challenging. It involves</p>
-<ol class="arabic simple">
-<li>Selecting speakers from Free Software Stream</li>
-<li>Convince authorities to conduct a Free Software Conference</li>
-<li>Getting audience to attend the event</li>
-<li>Using only Free Software for organizing and other purposes</li>
-</ol>
-<p>First problem we faced was whether or not to involve technologies from Google and Mozilla. With Free Software Foundation strongly against Google products, especially Android;  we decided not to go for the Android Workshop, one of the most popular and easy to organize tech workshop conducted in our part of the world. With Mozilla in its earlier stage of development and its intentions not clear we have decided not to go for that also. Anyway we could solve the first three points easily, since my task was to conduct the program in its third edition. I am talking about <a class="reference external" href="http://icefoss.fisat.ac.in/">ICEFOSS</a> , a Free Software Conference conducted by Federal Institute of Science And Technology. Here I will be writing about the Free Softwares we used and how we tried our maximum to stick to the Free Software ideology.</p>
-<div class="section" id="brochure-poster">
-<h2>Brochure, Poster…..</h2>
-<p>First task was to create a brochure. There are lots of tools available. We had already created some using LaTeX. This time we went for Gimp. Next task was to create poster, and used Inkscape for that purpose. Inkscape being a vector graphics editor proved very helpful. Since it uses geometrical primitives, to represent images the quality remains same even though we try to enlarge it. When creating brochure using Gimp we faced the problem of quality. For invitation we used LaTeX.</p>
-</div>
-<div class="section" id="web-site">
-<h2>Web Site</h2>
-<p>Major criticism we face usually is of about server and site templates. This time we took extra care to create the site using Free Software tools. So we went for Bootstrap,which is licensed under the Apache 2.0 license.  Also the all the images used in the site are under public domain.</p>
-</div>
-<div class="section" id="conference-presentation">
-<h2>Conference Presentation</h2>
-<p>We provided laptops loaded with Debian for speakers.</p>
-</div>
-<div class="section" id="certificate">
-<h2>Certificate</h2>
-<p>Certificate is made using LaTeX template available.</p>
-</div>
+                <p>First released in 2002, <a class="reference external" href="https://www.archlinux.org/">Arch Linux</a> boasts of of delivering latest packages. This is a good thing considering you are using Debian. So thought of giving a try on my new HP Probook.</p>
+<p>This is what GNU has to say about Arch</p>
+<blockquote>
+Arch has the two usual problems: there's no clear policy about what             software can be included, and nonfree blobs are shipped with their kernel,              Linux. Arch also has no policy about not distributing nonfree software          through their normal channels.</blockquote>
+<p>Before start installing Arch, the best thing to do is to find the fastest mirrors available. For this you need to install the package reflector using the package manager pacman</p>
+<p><tt class="docutils literal">pacman <span class="pre">-S</span> reflector</tt></p>
+<p>Then run it with</p>
+<p><tt class="docutils literal">reflector <span class="pre">--verbose</span> <span class="pre">-l</span> 5 <span class="pre">--sort</span> rate <span class="pre">--save</span> /etc/pacman.d/mirrorlist</tt></p>
+<p>Then  I used the tutorial in <a class="reference external" href="http://www.wikihow.com/Install-Arch-Linux">Wikihow to install Arch</a>.</p>
+<p>To install GNOME.</p>
+<p><tt class="docutils literal">pacman <span class="pre">-S</span> gnome <span class="pre">gnome-extra</span> <span class="pre">gnome-system-tools</span></tt></p>
+<p>Then install GDM</p>
+<p><tt class="docutils literal">pacman <span class="pre">-S</span> gdm</tt></p>
+<p>Run the following command to start GDM automatically</p>
+<p><tt class="docutils literal">systemctl enable gdm.service</tt></p>
+<p>Then reboot and if everything goes will you will be getting Arch with Gnome.</p>
+<p>To install xorg, run</p>
+<p><tt class="docutils literal">pacman <span class="pre">-S</span> <span class="pre">xorg-server</span></tt></p>
+<p>Follow the Arch wiki for installing <a class="reference external" href="https://wiki.archlinux.org/index.php/xorg#Installation">display driver</a>.</p>
 
                 </div><!-- /.entry-content -->
                 <div class="comments">
                 <h2>Comments !</h2>
                         <div id="disqus_thread"></div>
                         <script type="text/javascript">
-                           var disqus_identifier = "how-easy-it-is-to-organize-a-free-software-conference.html";
+                           var disqus_identifier = "arch-linux-installation-for-a-beginner.html";
                            (function() {
                                 var dsq = document.createElement('script');
                                 dsq.type = 'text/javascript'; dsq.async = true;
