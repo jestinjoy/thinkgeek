@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>Think Geek</title><link>http://blog.jestinjoy.info/</link><description></description><lastBuildDate>Thu, 15 Sep 2016 10:28:00 +0530</lastBuildDate><item><title>Vim Options for a beginner</title><link>http://blog.jestinjoy.info/vim-options-for-a-beginner.html</link><description>&lt;p&gt;These are some options I found interesting&lt;/p&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;:set syntax on&lt;/tt&gt;&lt;/p&gt;
-&lt;p&gt;This will trun syntac highlighting on&lt;/p&gt;
+&lt;p&gt;This will turn syntax highlighting on&lt;/p&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;:set number&lt;/tt&gt;&lt;/p&gt;
 &lt;p&gt;This will show the line number&lt;/p&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;:hardcopy &amp;gt; file.pdf&lt;/tt&gt;&lt;/p&gt;
