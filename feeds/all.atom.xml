@@ -4,7 +4,7 @@
 &lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;apt-get&lt;/span&gt; purge nvidia*&lt;/tt&gt;&lt;/p&gt;
 &lt;p&gt;Best way to get Nvidia driver and CUDA up and running is to download CUDA Toolkit (about 2.5GB) from &lt;a class="reference external" href="https://developer.nvidia.com/cuda-downloads"&gt;Nvidia site&lt;/a&gt; and installing it. Execute the downloaded runfile by typing&lt;/p&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;sudo sh cuda_10.1.168_418.67_linux.run&lt;/tt&gt;&lt;/p&gt;
-&lt;p&gt;This will install NVIDIA and CUDA driver.&lt;/p&gt;
+&lt;p&gt;This will install NVIDIA driver and CUDA.&lt;/p&gt;
 </content><category term="free_software"></category><category term="linux"></category><category term="ubuntu"></category><category term="cuda"></category></entry><entry><title>Assistive Technology definitions</title><link href="http://jestinjoy.github.io/thinkgeek/assistive-technology-definitions.html" rel="alternate"></link><published>2018-07-06T10:28:00+05:30</published><updated>2018-07-06T10:28:00+05:30</updated><author><name>Jestin Joy</name></author><id>tag:jestinjoy.github.io,2018-07-06:/thinkgeek/assistive-technology-definitions.html</id><summary type="html">&lt;p class="first last"&gt;AT definitions&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;Assistive Technology Industry Association (ATIA) defines Assistive Technology (AT) as&lt;/p&gt;
 &lt;p&gt;&amp;gt; Assistive technology (AT) is any item, piece of equipment, software program, or product system that is used to increase, maintain, or improve the functional capabilities of persons with disabilities.&lt;/p&gt;

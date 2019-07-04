@@ -4,7 +4,7 @@
 &lt;p&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;apt-get&lt;/span&gt; purge nvidia*&lt;/tt&gt;&lt;/p&gt;
 &lt;p&gt;Best way to get Nvidia driver and CUDA up and running is to download CUDA Toolkit (about 2.5GB) from &lt;a class="reference external" href="https://developer.nvidia.com/cuda-downloads"&gt;Nvidia site&lt;/a&gt; and installing it. Execute the downloaded runfile by typing&lt;/p&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;sudo sh cuda_10.1.168_418.67_linux.run&lt;/tt&gt;&lt;/p&gt;
-&lt;p&gt;This will install NVIDIA and CUDA driver.&lt;/p&gt;
+&lt;p&gt;This will install NVIDIA driver and CUDA.&lt;/p&gt;
 </content><category term="free_software"></category><category term="linux"></category><category term="ubuntu"></category><category term="cuda"></category></entry><entry><title>Arch Linux installation for beginner</title><link href="http://jestinjoy.github.io/thinkgeek/arch-linux-installation-for-beginner.html" rel="alternate"></link><published>2016-08-31T17:28:00+05:30</published><updated>2016-08-31T17:28:00+05:30</updated><author><name>Jestin Joy</name></author><id>tag:jestinjoy.github.io,2016-08-31:/thinkgeek/arch-linux-installation-for-beginner.html</id><summary type="html">&lt;p class="first last"&gt;Arch Linux&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;First released in 2002, &lt;a class="reference external" href="https://www.archlinux.org/"&gt;Arch Linux&lt;/a&gt; boasts of of delivering latest packages. This is a good thing considering you are using Debian. So thought of giving a try on my new HP Probook.&lt;/p&gt;
 &lt;p&gt;This is what GNU has to say about Arch&lt;/p&gt;
